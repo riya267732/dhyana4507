@@ -5,13 +5,13 @@ import App from './App.tsx';
 
 const container = document.getElementById('root');
 
-if (!container) {
-  console.error("Failed to find the root element. Check your index.html.");
-} else {
+if (container) {
   const root = createRoot(container);
   root.render(
     <React.StrictMode>
       <App />
     </React.StrictMode>
   );
+} else {
+  console.error("Critical Error: Root element not found. The app cannot start.");
 }

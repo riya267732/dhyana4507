@@ -8,11 +8,12 @@ export default defineConfig({
     'process.env.API_KEY': JSON.stringify(process.env.API_KEY || ''),
     'process.env': {}
   },
+  server: {
+    port: 3000,
+    host: true
+  },
   build: {
     outDir: 'dist',
-    sourcemap: false
-  },
-  server: {
-    port: 3000
+    target: 'esnext'
   }
 });
