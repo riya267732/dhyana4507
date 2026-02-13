@@ -1,6 +1,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
-import { getGeneralChatResponse } from '../services/geminiService';
+import { getGeneralChatResponse } from '../services/geminiService.ts';
 
 interface Message {
   role: 'user' | 'model';

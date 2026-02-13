@@ -1,11 +1,11 @@
 
 import React, { useState } from 'react';
-import { Logo } from './components/Logo';
-import { SectionTitle } from './components/SectionTitle';
-import { CourtsideConsultant } from './components/CourtsideConsultant';
-import { ChatBox } from './components/ChatBox';
-import { PRODUCTS, MARKET_STATS, COMPETITORS, VALUES } from './constants';
-import { Category } from './types';
+import { Logo } from './components/Logo.tsx';
+import { SectionTitle } from './components/SectionTitle.tsx';
+import { CourtsideConsultant } from './components/CourtsideConsultant.tsx';
+import { ChatBox } from './components/ChatBox.tsx';
+import { PRODUCTS, MARKET_STATS, COMPETITORS, VALUES } from './constants.tsx';
+import { Category } from './types.ts';
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'consumer' | 'investor'>('consumer');
@@ -280,7 +280,7 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="md:col-span-2">
             <Logo className="mb-6 h-10" />
-            <p className="text-zinc-500 max-w-sm mb-8">
+            <p className="text-zinc-500 max-sm mb-8">
               HOOP is a culture-first sportswear brand dedicated to the players, the dreamers, and the builders of the game.
             </p>
             <div className="flex gap-4">

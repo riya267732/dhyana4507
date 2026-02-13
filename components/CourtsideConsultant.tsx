@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { getStylingAdvice } from '../services/geminiService';
+import { getStylingAdvice } from '../services/geminiService.ts';
 
 export const CourtsideConsultant: React.FC = () => {
   const [query, setQuery] = useState('');
